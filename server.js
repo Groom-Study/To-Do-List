@@ -1,5 +1,7 @@
 ﻿const express = require('express');
 const cors = require('cors');
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpecs = require('./config/swagger');
 require('dotenv').config();
 
 const scheduleRoutes = require('./routes/schedule.routes');
@@ -12,13 +14,17 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Swagger 문서
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
+
 // 루트 라우트
 app.get('/', (req, res) => {
   res.json({
     message: 'Todo List API Server',
     version: '1.0.0',
     endpoints: {
-      schedules: '/api/schedules'
+      schedules: '/api/schedules',
+      swagger: '/api-docs'
     }
   });
 });
@@ -48,4 +54,5 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   console.log(`http://localhost:${PORT}`);
+  console.log(`Swagger docs: http://localhost:${PORT}/api-docs`);
 });

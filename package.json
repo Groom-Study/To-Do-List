@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "to-do-list",
   "version": "1.0.0",
   "description": "Todo List Backend API with Express and MySQL",
@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/Groom-Study/To-Do-List.git"
   },
-  "keywords": ["express", "mysql", "todo", "api"],
+  "keywords": [
+    "express",
+    "mysql",
+    "todo",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
@@ -24,7 +29,9 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "mysql2": "^3.16.1"
+    "mysql2": "^3.16.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
