@@ -1,7 +1,7 @@
 import React from 'react';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import TodoItem from './TodoItem';
-import { reorderTodo } from '../api/todoApi';
+import { reorderTodos } from '../api/todoApi';
 import { alertError } from '../util';
 
 const TodoList = React.memo(({ todos, setTodos }) => {
@@ -15,7 +15,7 @@ const TodoList = React.memo(({ todos, setTodos }) => {
 
     try {
       console.debug('dnd result:', result);
-      await reorderTodo([
+      await reorderTodos([
         { id: srcTodo.id, order: dstTodo.order },
         { id: dstTodo.id, order: srcTodo.order },
       ]);
