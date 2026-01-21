@@ -3,7 +3,7 @@ import { PlusIcon } from '@heroicons/react/24/outline';
 import { createTodo } from '../api/todoApi';
 import { alertError } from '../util';
 
-const CreateForm = ({ setTodos }) => {
+const CreateTodoForm = ({ setTodos }) => {
   const [value, setValue] = useState('');
 
   const handleInputChange = (e) => {
@@ -56,4 +56,4 @@ const CreateForm = ({ setTodos }) => {
   );
 };
 
-export default CreateForm;
+export default CreateTodoForm;
