@@ -15,10 +15,10 @@
 
 | 이름 | 담당 미션 | 작업 브랜치 (Link) | 상태 |
 | :--- | :--- | :--- | :--- |
-| **배윤상** | TODO | [feature/yoonsang](https://github.com/Groom-Study/youtube-mockup/tree/feature/yoonsang_FullStack19) | ✅ 완료 |
-| **지연우** | TODO | [feature/yeonwoo](https://github.com/Groom-Study/youtube-mockup/tree/feature/yeonwoo) | ✅ 완료 |
-| **엄효선** | TODO | [feature/hsyeom](https://github.com/Groom-Study/youtube-mockup/tree/feature/hsyeom) | ✅ 완료 |
-| **이우민** | TODO | [feature/woomin](https://github.com/Groom-Study/youtube-mockup/tree/feature/woomin) | ✅ 완료 |
+| **배윤상** | TODO | [feature/yoonsang](https://github.com/Groom-Study/To-Do-List/tree/feature/yoonsang_FullStack19) | ✅ 완료 |
+| **지연우** | TODO | [feature/yeonwoo](https://github.com/Groom-Study/To-Do-List/tree/feature/yeonwoo) | ✅ 완료 |
+| **엄효선** | TODO | [feature/hsyeom](https://github.com/Groom-Study/To-Do-List/tree/feature/hsyeom) | ✅ 완료 |
+| **이우민** | TODO | [feature/woomin](https://github.com/Groom-Study/To-Do-List/tree/feature/woomin) | ✅ 완료 |
 
 ---
 
@@ -37,4 +37,5 @@ ODM: Mongoose
 Documentation: Swagger UI
 Testing: Jest, Supertest
 - **Collaboration**: Git, GitHub (Branch Strategy)
+
 
